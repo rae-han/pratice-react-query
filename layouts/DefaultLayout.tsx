@@ -12,7 +12,7 @@ const DefaultLayout: NextPage<Props> = ({children}) => {
     { id: 1, route: '/', text: 'useQuery' },
     { id: 2, route: '/parallel/1', text: 'Parallel with useQuery' },
     { id: 3, route: '/parallel/2', text: 'Dynamic Parallel with useQueries' },
-    { id: 4, route: '/', text: 'useQuery' },
+    { id: 4, route: '/dependent', text: 'Dependent' },
   ])
 
   return (
