@@ -1,4 +1,16 @@
 {
+  "users": [
+    {
+      "id": "raehan@google.com",
+      "nickname": "raehan",
+      "postId": 1
+    },
+    {
+      "id": "raehan@naver.com",
+      "nickname": "hanrae",
+      "postId": 4
+    }
+  ],
   "posts": [
     {
       "id": 1,
@@ -23,18 +35,48 @@
       "title": "post 4",
       "author": "reahan",
       "description": "이 기상과 이 맘으로 충성을 다하여"
-    }
-  ],
-  "users": [
-    {
-      "id": "raehan@google.com",
-      "nickname": "raehan",
-      "postId": 1
     },
     {
-      "id": "raehan@naver.com",
-      "nickname": "hanrae",
-      "postId": 4
+      "id": 5,
+      "title": "post",
+      "author": "reahan",
+      "description": "무궁화 삼천리 화려 강"
+    },
+    {
+      "id": 6,
+      "title": "post",
+      "author": "reahan",
+      "description": "무궁화 삼천리 화려 강"
+    },
+    {
+      "id": 7,
+      "title": "post",
+      "author": "reahan",
+      "description": "무궁화 삼천리 화려 강"
+    },
+    {
+      "id": 8,
+      "title": "post",
+      "author": "reahan",
+      "description": "무궁화 삼천리 화려 강"
+    },
+    {
+      "id": 9,
+      "title": "post",
+      "author": "reahan",
+      "description": "무궁화 삼천리 화려 강"
+    },
+    {
+      "id": 10,
+      "title": "post",
+      "author": "reahan",
+      "description": "무궁화 삼천리 화려 강"
+    },
+    {
+      "id": 11,
+      "title": "post",
+      "author": "reahan",
+      "description": "무궁화 삼천리 화려 강산 마지막"
     }
   ]
 }
