@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "post 1",
+      "author": "reahan",
+      "description": "동해물과 백두산이 마르고 닳도록"
+    },
+    {
+      "id": 2,
+      "title": "post 2",
+      "author": "reahan",
+      "description": "남산 위에 저 소나무 철갑을 두른 듯"
+    },
+    {
+      "id": 3,
+      "title": "post 3",
+      "author": "reahan",
+      "description": "가을 하늘 공활한데 높고 구름 없이"
+    },
+    {
+      "id": 4,
+      "title": "post 4",
+      "author": "reahan",
+      "description": "이 기상과 이 맘으로 충성을 다하여"
+    }
+  ]
+}
