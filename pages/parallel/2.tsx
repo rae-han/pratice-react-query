@@ -31,21 +31,26 @@ const ParallelWithQueries: NextPage = () => {
   });
 
   if (isError1 || isError2 || isError3 || isError4) {
+    console.log(post1)
     return <div>error!</div>
   }
 
   if (isLoading1 || isLoading2 || isLoading3 || isLoading4) {
+    console.log(post1)
     return <div>loading...</div>
   }
 
   return (
     <DefaultLayout>
-      <main>
-        <PostItem post={post1} />
-        <PostItem post={post2} />
-        <PostItem post={post3} />
-        <PostItem post={post4} />
-      </main>
+      { (post1 && post2 && post3 && post4) ? (
+        <main>
+          <PostItem post={post1} />
+          <PostItem post={post2} />
+          <PostItem post={post3} />
+          <PostItem post={post4} />
+        </main>
+      ) : null}
+
     </DefaultLayout>
   )
 }
