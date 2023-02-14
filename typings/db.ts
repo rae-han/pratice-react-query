@@ -10,3 +10,9 @@ export interface User {
   nickname: string;
   postId: number;
 }
+
+export interface Todo {
+  id: number;
+  todo: string;
+  done: boolean;
+}

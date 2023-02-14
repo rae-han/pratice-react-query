@@ -9,20 +9,24 @@ interface Props {
 
 const DefaultLayout: NextPage<Props> = ({children}) => {
   const routes = useRef([
-    { id: 1, route: '/', text: 'useQuery' },
-    { id: 2, route: '/parallel/1', text: 'Parallel with useQuery' },
-    { id: 3, route: '/parallel/2', text: 'Dynamic Parallel with useQueries' },
-    { id: 4, route: '/dependent', text: 'Dependent' },
-    { id: 5, route: '/paginated', text: 'Paginated' },
-    { id: 6, route: '/infinite', text: 'Infinite' },
+    { route: '/', text: 'useQuery' },
+    { route: '/parallel/1', text: 'Parallel with useQuery' },
+    { route: '/parallel/2', text: 'Dynamic Parallel with useQueries' },
+    { route: '/dependent', text: 'Dependent' },
+    { route: '/paginated', text: 'Paginated' },
+    { route: '/infinite', text: 'Infinite' },
+    { route: '/todos', text: 'Todos()' },
+    { route: '/todos/1', text: 'Todos(basic - queryClient.invalidateQueries)' },
+    { route: '/todos/2', text: 'Todos(queryClient.setQueryData)' },
+    { route: '/todos/3', text: 'Todos(Optimistic Update)' },
   ])
 
   return (
     <>
       <nav className={styles.nav}>
         <ul>
-          {routes.current?.map((route) => (
-            <Link href={route.route} key={route.id}><li>{route.text}</li></Link>
+          {routes.current?.map((route, index) => (
+            <Link href={route.route} key={index}><li>{route.text}</li></Link>
           ))}
         </ul>
       </nav>

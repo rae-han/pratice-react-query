@@ -78,5 +78,17 @@
       "author": "reahan",
       "description": "무궁화 삼천리 화려 강산 마지막"
     }
+  ],
+  "todos": [
+    {
+      "todo": "ㅂㅈㄷㄱ",
+      "done": false,
+      "id": 1
+    },
+    {
+      "todo": "asdf",
+      "done": false,
+      "id": 2
+    }
   ]
 }
