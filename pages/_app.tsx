@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <QueryClientProvider client={queryClient}>
+      {/* Hydrate 컴포넌트는 Next.js를 위한 컴포넌트 */}
       <Hydrate state={pageProps.dehydratedState}>
         <Component {...pageProps} />
       </Hydrate>
