@@ -19,6 +19,7 @@ const DefaultLayout: NextPage<Props> = ({children}) => {
     { route: '/todos/1', text: 'Todos(basic - queryClient.invalidateQueries)' },
     { route: '/todos/2', text: 'Todos(queryClient.setQueryData)' },
     { route: '/todos/3', text: 'Todos(Optimistic Update)' },
+    { route: '/ssr', text: 'Server Side Rendering' },
   ])
 
   return (
