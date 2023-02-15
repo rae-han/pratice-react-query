@@ -20,6 +20,8 @@ const SSR: NextPage = () => {
     error,
   } = useQuery<Post[], Error>(["posts"], getPosts, {
     refetchOnWindowFocus: false,
+    refetchOnMount: false, // SSR 이후 한번 더 refetch 가 일어나는 것이 불필요하다고 느낄 경우에는 refetchOnMount를 false로 하거나
+    // staleTime: Infinity // staleTime을 Infinity로 설정하면 SSR 이후 refetch가 발생하지 않는다.
   });
 
 
@@ -38,9 +40,13 @@ const SSR: NextPage = () => {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
+  const queryClient = new QueryClient();
+
+  await queryClient.prefetchQuery(["posts"], getPosts);
+
   return {
     props: {
-      dehydratedState: {}
+      dehydratedState: dehydrate(queryClient)
     }
   }
 }
